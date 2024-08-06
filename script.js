@@ -5,7 +5,7 @@ let currsong = null;
 let songs = [];
 getFolders();
 function getFolders(){
-    fetch('/songs')
+    fetch('https://himanshu-playlist.netlify.app/songs')
     .then(res=>res.text())
     .then(foldersdata=>updatefolder(foldersdata))   
 }
@@ -35,7 +35,7 @@ Array.from(document.querySelectorAll(".card")).forEach(e =>
 // Function to fetch the playlist for the selected folder
 function getFolder(folderName) {
   folder = folderName;
-  fetch(`/songs/${folder}`)
+  fetch(`https://himanshu-playlist.netlify.app/songs/${folder}`)
     .then(res => res.text())
     .then(data => getdata(data))
     .catch(err => console.log('Network problem:', err));

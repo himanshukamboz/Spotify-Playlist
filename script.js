@@ -5,7 +5,7 @@ let currsong = null;
 let songs = [];
 getFolders();
 function getFolders(){
-    fetch('http://127.0.0.1:3000/songs')
+    fetch('/songs')
     .then(res=>res.text())
     .then(foldersdata=>updatefolder(foldersdata))   
 }
@@ -35,7 +35,7 @@ Array.from(document.querySelectorAll(".card")).forEach(e =>
 // Function to fetch the playlist for the selected folder
 function getFolder(folderName) {
   folder = folderName;
-  fetch(`http://127.0.0.1:3000/songs/${folder}`)
+  fetch(`/songs/${folder}`)
     .then(res => res.text())
     .then(data => getdata(data))
     .catch(err => console.log('Network problem:', err));

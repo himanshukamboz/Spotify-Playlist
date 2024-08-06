@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+  }
+  body{
+    background-color: black;
+    color:white;
+  }
+  main{
+    display:flex;
+    gap:20px;
+  }
+  
+  .left-container { 
+    min-width:300px;
+    width: 23vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    
+  }
+  
+  .leftupper {
+    display: flex;
+    gap:20px;
+    flex-direction: column;
+    background-color: #121212; 
+    width: 100%;
+    padding: 20px; 
+    margin:  10px;
+    font-size: bolder;
+    box-sizing: border-box; 
+  }
+  .left-container >a img{
+    width:118px; 
+  }
+  
+  .home {
+    display: flex;
+    align-items: center; 
+    gap:20px;
+  }
+  .title-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  .cross{
+    display: none;
+  }
+  .playlist{
+    height: 100vh;
+    margin:0px 10px;
+    width:100%;
+    min-height:300px;
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    justify-content: space-between;
+  }
+  .library{
+    display: flex;
+    justify-content: space-between;
+  }
+  .playsongslist{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 212px;
+    height: 10%;
+    overflow-y: scroll;
+  
+  }
+  .playcard{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border:2px solid white;
+    padding:12px 10px;
+    border-radius: 10px;
+  }
+  .playcard ul{
+    font-size:16px;
+  }
+  .playcard ul li{
+    list-style-type: none;
+  }
+  .playcard > div{
+    gap:4px;
+  }
+  .playcard> div span{
+    font-size:16px
+    
+  }
+ 
+  .new-footer-class{
+    display: flex;
+    padding: 0 18px;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+  
+ .new-footer-class a{
+    text-decoration: none;
+    color:grey;
+ }
+ .btn{
+  padding: 10px 16px;
+  width: 128px;
+  border-radius: 33px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  align-self: center;
+  margin-top: 10px;
+ }
+ .btn > a{
+  text-decoration: none;
+  color:white;
+  display: flex;
+  gap:10px;
+  font-size: 15px;
+ }
+ .imgglobe{
+  display: inline-block;
+  width:20px;
+  align-items: center;
+ }
+.right-container{
+ width:75vw;
+ height:100vh;
+ display: flex;
+ flex-direction: column;
+ position: relative;
+}
+.right-side {
+  margin-top: 10px;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.hamburger{
+  display: none;
+}
+.right-side>nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color:rgba(16, 16, 16, 0.673);
+  padding:8px 30px;
+  position: sticky;
+}
+.signup > button{
+  outline: none;
+  border-radius: 33px;
+  padding:18px 40px;
+  font-size: 20px;
+  font-weight: 800;
+  font-family: sans-serif;
+  border: none;
+}
+.sign{
+  color:grey;
+  background-color:transparent;
+  
+}
+.fixed-container{
+  background-color: #121212;
+  height: 100vh;
+}
+.content-container{
+  background-color: #121212;
+  height:78%;
+  padding:0 4%;
+  overflow-y: scroll;
+}
+.titleplay{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:37px 0;
+}
+
+.cardcontainer{
+  display: flex;
+  flex-wrap: wrap;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  width:210px; 
+  height:300px;  
+  padding: 20px;
+  gap:10px;
+  border-radius: 10px;
+  position: relative;
+}
+.card:hover{
+ background-color: #3e393980;
+ transition: 0.5s ;
+}
+.card-img{
+  width:100%;
+  object-fit: contain;
+}
+.playbtn{
+  background-color: green;
+    width: 50px;
+    position: absolute;
+    top: 144px;
+    right: 31px;
+    border-radius: 50%;
+    padding: 10px;
+    opacity: 0;
+}
+.card:hover .playbtn{
+  opacity: 1;
+  transition: 0.5s;
+  top:133px;
+}
+.arrows{
+  display: flex;
+  gap:10px;
+}
+.playsongs{
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height: 10%;
+  background-color: #1b1a18;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.seekbar{
+  width:95%;
+  margin-inline: auto;
+  background-color: white;
+  position: absolute;
+  bottom: 10px;
+  padding:1px;
+  transition: 0.3s ;
+}
+.currentpos{
+  position: absolute;
+    bottom: 5px;
+    left: 2%;
+    border-radius: 10px;
+    padding: 6px;
+    background-color: white;
+    cursor: pointer;
+    transition: left 0.4s linear
+}
+
+@media(max-width:813px){
+  .signup > button{
+    padding: 12px 32px;
+  }
+  .arrows{
+    width: 36px;
+    gap:2px;
+  }
+  .content-container{
+    padding: 0 1%;
+  }
+  .card{
+    margin:auto;
+  }
+  .cardcontainer{
+    padding:0 1%
+  }
+}
+@media(max-width:765px){
+  .left-container{
+    position:absolute;
+    z-index: 1;
+    left :-100%;
+    transition: all .3s;
+  }
+  .leftupper {
+    margin: 10px 10px 0 0;
+    gap:10px;
+  }
+  .playlist{
+    margin:0;
+    padding: 0;
+    justify-content: space-around;
+  }
+  .library{
+    justify-content: space-around;
+  }
+  .playsongslist{
+    gap:8px;
+    margin-top: 10px;
+    min-height: 200px;
+  }
+  .playcard{
+    padding-block: 8px;
+  }
+  .playcard>img,.playcard>div>img{
+    width: 20px;
+  }
+  .hamburger{
+    display: inline-block;
+  }
+  .cross{
+    display: inline-block;
+  }
+  .playsongslist{
+    width:98%;
+    margin-left: 8px;
+    min-height: 171px;
+    
+  }
+  .new-footer-class{
+    gap:10px;
+    font-size: 15px;
+  }
+  .btn{
+    margin-top: 0;
+    padding-block: 9px;
+  }
+  .right-side{
+    width:100vw;
+  }
+  .right-side > nav{
+    padding-inline: 10px;
+  }
+  .signup > button{
+    padding: 9px 14px;
+    font-size: 16px;
+  }
+  .content-container{
+    padding:0 2%;
+    height: 69%;
+  }
+  .cardcontainer{
+    width: 100%;
+  }
+  .playsongs{
+    width: 100vw;
+    flex-direction: column;
+    height: 100px;
+    justify-content: flex-start;
+  }
+  .controls >img{
+    width:30px;
+    margin-top: 10px;
+  }
+}
+  

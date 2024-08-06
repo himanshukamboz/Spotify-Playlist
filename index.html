@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>spotify</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="left-container">
+        <div class="leftupper border">
+          <div class="title-flex">
+            <a href="/"
+              ><img class="invert" src="images/title.svg" alt="logo"
+            /></a>
+            <img
+              src="images/cross.svg"
+              alt="cross"
+              width="20px"
+              class="cross"
+            />
+          </div>
+          <div class="home pointer">
+            <img class="invert" src="images/home.svg" alt="home" width="30px" />
+            <h3>Home</h3>
+          </div>
+          <div class="search flex items-align pointer">
+            <img
+              class="invert"
+              src="images/search.svg"
+              alt="search"
+              width="30px"
+            />
+            <h3>Search</h3>
+          </div>
+        </div>
+        <div class="playlist border">
+          <div class="library items-align">
+            <div class="outer flex">
+              <img src="images/library.svg" alt="library class="invert"
+              width="30px">
+              <h3>Your Library</h3>
+            </div>
+            <img src="images/plus.svg" alt="plus" width="20px" class="invert" />
+          </div>
+          <div class="playsongslist scroll"></div>
+
+          <footer class="new-footer-class">
+            <div>
+              <a
+                href="https://www.spotify.com/in-en/legal/"
+                class="new-link-class"
+              >
+                <span>Legal</span>
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://www.spotify.com/in-en/safetyandprivacy/"
+                class="new-link-class"
+              >
+                <span>Safety &amp; Privacy Center</span>
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://www.spotify.com/in-en/legal/privacy-policy/"
+                class="new-link-class"
+              >
+                <span>Privacy Policy</span>
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://www.spotify.com/in-en/legal/cookies-policy/"
+                class="new-link-class"
+              >
+                <span>Cookies</span>
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"
+                class="new-link-class"
+              >
+                <span>About Ads</span>
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://www.spotify.com/in-en/accessibility/"
+                class="new-link-class"
+              >
+                <span>Accessibility</span>
+              </a>
+            </div>
+          </footer>
+          <button class="btn">
+            <a href="#"
+              ><img
+                class="invert imgglobe"
+                src="images/globe.svg"
+                alt="globe"
+                width="10px"
+              />English
+            </a>
+          </button>
+        </div>
+      </div>
+      <div class="right-container">
+        <div class="right-side border">
+          <nav>
+            <div class="hamburger">
+              <img
+                src="/images/menu-01-stroke-rounded.svg"
+                alt="menu"
+                width="40px"
+              />
+            </div>
+            <div class="arrows">
+              <img
+                src="images/left.svg"
+                alt="left"
+                class="invert leftarrowimg pointer rounded"
+                width="20px"
+              />
+              <img
+                src="images/right.svg"
+                alt="right"
+                class="invert leftarrowimg pointer rounded piece"
+                width="20px"
+              />
+            </div>
+            <div class="signup">
+              <button class="sign pointer">Sign up</button>
+              <button class="login pointer">Log in</button>
+            </div>
+          </nav>
+          <div class="fixed-container">
+            <div class="content-container scroll">
+              <div class="titleplay">
+                <h2>Popular Albums</h2>
+                <h3 style="color: grey" class="pointer">Show all</h3>
+              </div>
+              <div class="cardcontainer"></div>
+            </div>
+          </div>
+        </div>
+        <div class="playsongs">
+          <div class="songname"></div>
+          <div class="controls pointer">
+            <img
+              src="images/previous-stroke-rounded.svg"
+              alt="prev"
+              width="40px"
+              class="prev"
+            />
+            <img
+              src="images/play-circle-02-stroke-rounded.svg"
+              alt="play"
+              width="40px"
+              class="playcircle"
+            />
+            <img
+              src="images/next-stroke-rounded.svg"
+              alt="next"
+              width="40px"
+              class="next"
+            />
+          </div>
+          <div class="songduration"></div>
+          <div class="seekbar pointer"></div>
+          <div class="currentpos pointer"></div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

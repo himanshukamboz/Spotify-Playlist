@@ -4,7 +4,7 @@ let cardsongname = document.querySelector("div .songname");
 let currsong = null;
 let songs = [];
 const availableFolders = {
-  Favourites: ["Taur-Mundeya-Di.mp3", "Unstopabble.mp3"],
+  Favourites: ["Taur-Mundeya-Di.mp3", "Unstoppable.mp3","Papa-Kehte-Hain.mp3","Sunn_Raha_Hai.mp3"],
   Recent: ["Unstoppable.mp3","Meri_Aashiqui.mp3"],
 };
 
@@ -47,6 +47,7 @@ function getdata(folderName) {
 
   let songsOfFolder = availableFolders[folderName];
   // Generate new playlist HTML
+  songs = songsOfFolder
   let songUl = songsOfFolder
     .map(
       (e) => `
@@ -66,7 +67,7 @@ function getdata(folderName) {
    
 
   // Play the first song in the new playlist
-  playmusic(songsOfFolder[0], true);
+  playmusic(songs[0], true);
 
   // Append new playlist
   document.querySelector(".playsongslist").innerHTML += songUl;
